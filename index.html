@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Access. Global Freedom.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6B46C1', // фиолетовый акцент
+            secondary: '#4F46E5', // синий акцент
+            darkBg: '#0F0F0F',
+            cardBg: '#1A1A1A'
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #0F0F0F;
+      color: white;
+    }
+    .feature-card {
+      transition: transform 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+    .image-placeholder {
+      background: #1E1E1E;
+      color: #9CA3AF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 8px;
+      border: 1px solid #374151;
+    }
+    .neon-glow {
+      filter: drop-shadow(0 0 10px rgba(107, 70, 193, 0.7));
+    }
+    .faq-item {
+      transition: background-color 0.2s ease;
+    }
+    .faq-item:hover {
+      background-color: #1E1E1E;
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Header -->
+  <header class="bg-darkBg py-4 px-4 shadow-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">Cloud Access</div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white transition">About</a>
+        <a href="#" class="text-gray-300 hover:text-white transition">Testimonial</a>
+        <a href="#" class="text-gray-300 hover:text-white transition">Contact</a>
+      </nav>
+      <a href="https://t.me/your_bot?start=buy" class="bg-primary hover:bg-purple-700 text-white px-6 py-2 rounded-lg font-medium transition">Получить доступ</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight neon-glow">
+            Secure Access. Global Freedom.
+          </h1>
+          <p class="text-xl text-gray-300">
+            Unlock restricted online services with our secure European cloud servers. Bypass geo-restrictions, enjoy seamless streaming, and access AI tools effortlessly. Zero logs, total privacy.
+          </p>
+          <div class="flex gap-4">
+            <a href="#" class="inline-flex items-center bg-primary hover:bg-purple-700 text-white text-lg px-8 py-4 rounded-lg font-medium transition">
+              Know more →
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <!-- Placeholder вместо неоновой сферы -->
+          <div class="image-placeholder w-full h-80">
+            Неоновая сфера (фиолетово-синяя)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Secure Tunnel</h3>
+          <p class="text-gray-400 mt-2">Encrypted connection to EU servers.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">AI Ready</h3>
+          <p class="text-gray-400 mt-2">Perfect for Grok, ChatGPT, Midjourney.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Zero Logging</h3>
+          <p class="text-gray-400 mt-2">We don't store your data.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">EU Presence</h3>
+          <p class="text-gray-400 mt-2">Appear as a user from Europe.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Bypass Restrictions</h3>
+          <p class="text-gray-400 mt-2">Access blocked content effortlessly.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Easy Payment</h3>
+          <p class="text-gray-400 mt-2">Pay via Telegram Stars, no cards.</p>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Total Privacy</h3>
+          <p class="text-gray-400 mt-2">Your data remains completely private.</p>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Stream Seamlessly</h3>
+          <p class="text-gray-400 mt-2">Enjoy buffer-free streaming services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secure Cloud Access -->
+  <section class="py-20 px-4 bg-darkBg">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Unlock Global Access</span>
+        <h2 class="text-4xl font-bold mb-4">Secure Cloud Access</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          We offer secure and reliable access to online services restricted in Russia. Bypass geo-blocks and enjoy seamless access to your favorite platforms with complete privacy.
+        </p>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700">
+          <div class="image-placeholder w-full h-48 mb-4">
+            Глобус с замком
+          </div>
+          <div class="flex items-center gap-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+            Our service provides a secure, encrypted tunnel to European servers, allowing you to bypass geo-restrictions and access content as if you were browsing from the EU.
+          </div>
+        </div>
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700">
+          <div class="image-placeholder w-full h-48 mb-4">
+            Сеть серверов
+          </div>
+          <div class="flex items-center gap-2 mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+            Our service ensures that your online activities remain private and secure. We do not store any logs of your IP address, browsing history, or traffic data, guaranteeing complete anonymity.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bypass Geo-Restrictions -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-secondary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Why Us?</span>
+        <h2 class="text-4xl font-bold mb-4">Bypass Geo-Restrictions Effortlessly</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Our service ensures a secure, encrypted connection to EU servers, bypassing geo-restrictions and providing complete anonymity with a strict zero-logging policy.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="image-placeholder w-full max-w-2xl h-64">
+          Неоновая сфера (фиолетово-синяя) + текст "Unrestricted Global Access"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="py-20 px-4 bg-darkBg">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Key Features for Secure Access</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feature 1 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Data Encryption</h3>
+          <p class="text-gray-400 mt-2">Protects your data in transit.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">IP Masking</h3>
+          <p class="text-gray-400 mt-2">Protects your data in transit.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Zero Logs</h3>
+          <p class="text-gray-400 mt-2">Ensures complete user anonymity.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">EU Servers</h3>
+          <p class="text-gray-400 mt-2">Provides stable, fast connections.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Easy Setup</h3>
+          <p class="text-gray-400 mt-2">Get started in just minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Uninterrupted Global Access -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-secondary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Why Choose?</span>
+        <h2 class="text-4xl font-bold mb-4">Uninterrupted Global Access</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Accessing blocked content shouldn't be a hassle. Our service offers a seamless and secure way to bypass geo-restrictions, allowing you to enjoy the internet without borders.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Feature 1 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Secure Connection</h3>
+          <p class="text-gray-400 mt-2">Encrypted tunnel to EU servers ensures data protection and anonymity while bypassing restrictions.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700 feature-card">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+              <path d="M12 2a7 7 0 0 0-7 7v1h14V9a7 7 0 0 0-7-7z"/>
+              <path d="M12 19v-7"/>
+              <path d="M12 19a2 2 0 0 0 2-2"/>
+              <path d="M12 19a2 2 0 0 0-2-2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold">Total Anonymity</h3>
+          <p class="text-gray-400 mt-2">Zero logging policy guarantees complete privacy; we don't store your IP, traffic, or history.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enjoy Buffer-Free Streaming -->
+  <section class="py-20 px-4 bg-darkBg">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Seamless Streaming</span>
+        <h2 class="text-4xl font-bold mb-4">Enjoy Buffer-Free Streaming</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Our service is designed to provide seamless access to streaming platforms, allowing you to enjoy your favorite shows and movies without any interruptions or buffering.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="image-placeholder w-full max-w-2xl h-64">
+          Неоновая воронка (фиолетово-синяя)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real User Experiences -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-secondary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">User Stories</span>
+        <h2 class="text-4xl font-bold mb-4">Real User Experiences</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Discover how our users are breaking barriers and accessing global content with ease and security.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="https://via.placeholder.com/40" alt="Alex K." class="w-10 h-10 rounded-full">
+            <div>
+              <div class="font-semibold">Alex K.</div>
+              <div class="text-gray-400 text-sm">AI Enthusiast</div>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            I was struggling to access certain AI tools from Russia, but this service solved everything! The connection is stable, and I can finally use ChatGPT and Midjourney without any issues. Plus, the Telegram Stars payment is super convenient.
+          </p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="https://via.placeholder.com/40" alt="Dmitry P." class="w-10 h-10 rounded-full">
+            <div>
+              <div class="font-semibold">Dmitry P.</div>
+              <div class="text-gray-400 text-sm">Software Developer</div>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            As a developer, I need access to GitHub Copilot, which is restricted in Russia. This service provides a reliable and secure connection, allowing me to work without interruptions. The zero-logging policy gives me peace of mind knowing my data is safe.
+          </p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-cardBg p-6 rounded-xl border border-gray-700">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="https://via.placeholder.com/40" alt="Maria S." class="w-10 h-10 rounded-full">
+            <div>
+              <div class="font-semibold">Maria S.</div>
+              <div class="text-gray-400 text-sm">Streaming Fan</div>
+            </div>
+          </div>
+          <p class="text-gray-300">
+            I love watching shows that aren't available in my region. This service is a game-changer! The streaming is smooth, and I haven't experienced any buffering. Paying with Telegram Stars is also a big plus - no need to use my credit card.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="py-20 px-4 bg-darkBg">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-cardBg p-4 rounded-xl border border-gray-700 faq-item">
+          <div class="flex justify-between items-center cursor-pointer">
+            <h3 class="text-xl font-semibold">How does your service ensure my privacy?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 6v12"/>
+              <path d="M18 12H6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-cardBg p-4 rounded-xl border border-gray-700 faq-item">
+          <div class="flex justify-between items-center cursor-pointer">
+            <h3 class="text-xl font-semibold">What payment methods do you accept?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 6v12"/>
+              <path d="M18 12H6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-cardBg p-4 rounded-xl border border-gray-700 faq-item">
+          <div class="flex justify-between items-center cursor-pointer">
+            <h3 class="text-xl font-semibold">Which countries can I appear to be from?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 6v12"/>
+              <path d="M18 12H6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-cardBg p-4 rounded-xl border border-gray-700 faq-item">
+          <div class="flex justify-between items-center cursor-pointer">
+            <h3 class="text-xl font-semibold">Can I use this service for streaming?</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+              <path d="M12 6v12"/>
+              <path d="M18 12H6"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Secure Browsing -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-12">
+        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Ready?</span>
+        <h2 class="text-4xl font-bold mb-4">Start Secure Browsing</h2>
+        <p class="text-xl text-gray-300 mb-8">
+          Get secure and private access to global content. Start your journey today!
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="image-placeholder w-full max-w-2xl h-64">
+          Неоновая сетка (фиолетово-синяя)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-darkBg text-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Secure Access</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Features</a></li>
+            <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Company</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Product</a></li>
+            <li><a href="#" class="hover:text-white transition">Testimonial</a></li>
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Social</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="#" class="hover:text-white transition">Facebook</a></li>
+            <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+            <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Join our newsletter</h3>
+          <p class="text-gray-400 mb-4">Stay secure.</p>
+          <div class="flex gap-2">
+            <input type="email" placeholder="Enter your email" class="bg-cardBg text-white px-4 py-2 rounded-lg flex-1">
+            <button class="bg-primary hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-medium transition">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+        Codedesign.ai. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
